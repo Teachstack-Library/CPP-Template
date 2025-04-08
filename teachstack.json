@@ -1,0 +1,34 @@
+{
+  "languages": [
+    {
+      "language": "cpp"
+    }
+  ],
+  "modules": [
+    {
+      "name": "Hello World",
+      "dir": "HelloWorld",
+      "exercises": [
+        {
+          "name": "Hello World",
+          "dir": "hello_world",
+          "initialFiles": ["main.cc"],
+          "tests": [
+            {
+              "test": "HelloTest.HelloWorld",
+              "name": "Print 'Hello World!'",
+              "description": "Print 'Hello World!' to stdout"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "cpp",
+              "script": "main.cc",
+              "args": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
