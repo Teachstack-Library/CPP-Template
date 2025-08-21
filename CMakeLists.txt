@@ -15,16 +15,12 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
+include(GoogleTest)
 enable_testing()
 
-include(GoogleTest)
 
-add_definitions(-DDEF_SOURCE_LINE="${CMAKE_SOURCE_DIR}/${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_FILES_DIRECTORY}/${CMAKE_FILE_NAME}:${CMAKE_FILE_LINE}")
 
 # include(${CMAKE_CURRENT_SOURCE_DIR}/modules/HelloWorld/hello_world/CMakeLists.txt)
 add_subdirectory(modules/HelloWorld/hello_world)
 add_subdirectory(modules/HelloWorld2/hello_world_two)
 
-set_tests_properties(${all_tests} PROPERTIES
-  DEF_SOURCE_LINE "${CMAKE_SOURCE_DIR}/${CMAKE_CURRENT_SOURCE_DIR}/${CMAKE_FILES_DIRECTORY}/${CMAKE_FILE_NAME}:${CMAKE_FILE_LINE}"
-)

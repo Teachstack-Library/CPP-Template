@@ -13,6 +13,12 @@
           "name": "Hello World",
           "dir": "hello_world",
           "initialFiles": ["main.cc"],
+          "options": [
+            {
+              "language": "cpp",
+              "testTarget": "hello_world_tests"
+            }
+          ],
           "tests": [
             {
               "test": "HelloTest.HelloWorld",
@@ -23,8 +29,7 @@
           "scripts": [
             {
               "language": "cpp",
-              "script": "main.cc",
-              "args": []
+              "target": "hello_world"
             }
           ]
         }
