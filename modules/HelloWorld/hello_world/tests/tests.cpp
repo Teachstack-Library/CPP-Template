@@ -42,7 +42,7 @@ std::string trim(const std::string& str) {
 
 namespace Test {
     TEST(HelloTest, HelloWorld) {
-        std::string program_path = "hello_world";
+        std::string program_path = "./hello_world";
         std::string output = getStdoutFromCommand(program_path);
 
         char cwd[1024];
