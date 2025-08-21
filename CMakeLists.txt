@@ -22,5 +22,4 @@ enable_testing()
 
 # include(${CMAKE_CURRENT_SOURCE_DIR}/modules/HelloWorld/hello_world/CMakeLists.txt)
 add_subdirectory(modules/HelloWorld/hello_world)
-add_subdirectory(modules/HelloWorld2/hello_world_two)
 

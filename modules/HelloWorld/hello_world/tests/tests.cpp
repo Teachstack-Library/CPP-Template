@@ -45,7 +45,7 @@ namespace Test {
         std::string program_path = "hello_world";
         std::string output = getStdoutFromCommand(program_path);
 
-        char cwd[PATH_MAX];
+        char cwd[1024];
         if (getcwd(cwd, sizeof(cwd)) != NULL) {
             std::cout << "Current working directory: " << cwd << std::endl;
         } else {

@@ -12,7 +12,7 @@
         {
           "name": "Hello World",
           "dir": "hello_world",
-          "initialFiles": ["main.cc"],
+          "initialFiles": ["main.cpp"],
           "options": [
             {
               "language": "cpp",
